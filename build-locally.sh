@@ -10,7 +10,7 @@ printf  "${PURPLEBOLD}Building temporary Ubuntu-Nginx image:\n"
 docker build -t lancachenet/ubuntu-nginx:latest --progress tty https://github.com/lancachenet/ubuntu-nginx.git
 
 printf "${PURPLEBOLD}Building Monolithic image:\n"
-docker build -t lancachenet/monolithic:latest --progress tty https://github.com/lancachenet/monolithic.git
+docker build -t lancachenet/monolithic:latest --progress tty https://github.com/onethumb/monolithic.git
 
 printf "${PURPLEBOLD}Building Lancache-DNS image:\n"
 docker build -t lancachenet/lancache-dns:latest --progress tty https://github.com/lancachenet/lancache-dns.git
