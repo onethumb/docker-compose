@@ -29,3 +29,6 @@ services:
     volumes:
       - ${CACHE_ROOT}/cache:/data/cache
       - ${CACHE_ROOT}/logs:/data/logs
+    dns: 
+      - ${UPSTREAM_DNS}
+      - ${UPSTREAM_DNS_BACKUP}
